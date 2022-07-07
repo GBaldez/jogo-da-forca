@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Jogo da Forca</title>
 </head>
 <body>
     <header>
         <img src="css/Vector.png" alt="logo" class="logo">
         <h1>JOGO DA FORCA</h1>
+        <a href="#" id="audio"><i class="uil uil-volume"></i></a>
     </header>
 <!--forca-->
     <main id="forca">
@@ -29,7 +32,9 @@
         </footer>
 <!-- Fim do rodapé-->
 <!-- Scripts -->
-    <script src="js/desenhaTabuleiro.js"></script>
+    <script src="js/rules.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/game.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
     <script src="js/virtualKeyboard.js"></script>
     <script src="js/sounds.js"></script>

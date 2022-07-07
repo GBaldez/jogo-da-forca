@@ -13,7 +13,8 @@ body {
 header{
     display: flex;
     background-color: #dcedc8;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 h1 {
     color:midnightblue;  
@@ -59,6 +60,8 @@ h1 {
 #palavra-nova {
     border: 1px solid #ffffff;
     height: 80px;
+    color:black;
+    text-transform: uppercase;
     background-color: #fdfdfdfd;
 }
 #btn-reiniciar {
@@ -77,4 +80,9 @@ footer>p {
     color: black;
     width: 100%;
     display: none;
+}
+.uil-volume,
+.uil-volume-mute{
+    font-size: 2rem;
+    color: midnightblue;
 }

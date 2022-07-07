@@ -4,8 +4,7 @@ const myKeyboard = new Keyboard({
   onKeyPress: button => onKeyPress(button)
 });
 function onKeyPress(button) {   
-  if (button.match(/^[a-z]+$/)) {
-      console.log(button.toUpperCase());  
+  if (button.match(/^[a-z]+$/)) { 
       }
      verificaLetra(button.toUpperCase(), palavraSecreta);
 }
