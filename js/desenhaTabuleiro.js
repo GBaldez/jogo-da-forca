@@ -13,7 +13,8 @@ const container = document.querySelector("#forca");
 //função start
 const start = () => {
     divBotoes.remove();
-    canvas.style.display = "inline";
+    canvas.style.display = "inline-block";
+    container.style.height = "auto";
     desenhaForca();
     palavraSecreta = escolhePalavra();
     desenhaTracos(palavraSecreta);
@@ -113,7 +114,7 @@ const escreverLetrasErradas = (letra) => {
         tabuleiro.lineWidth = 6;
         tabuleiro.lineCap = "round";
         tabuleiro.lineJoin = "round";
-        tabuleiro.strokeStyle = "white";
+        tabuleiro.fillStyle = "#f44336";
         tabuleiro.fillText(letra, 1150, 100+erros*30);
         tabuleiro.stroke();    
 }
