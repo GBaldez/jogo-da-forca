@@ -10,6 +10,7 @@ const start = () => {
     divBotoes.remove();
     canvas.style.display = "inline-block";
     container.style.height = "auto";
+    if(window.innerWidth < 768) simpleKeyboard.style.display = "inline-block";
     desenhaForca();
     palavraSecreta = escolhePalavra();
     desenhaTracos(palavraSecreta);
