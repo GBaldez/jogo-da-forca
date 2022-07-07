@@ -1,0 +1,14 @@
+@media screen and (max-width: 480px) {
+    .botoes-jogo {
+        margin-top:20px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+@media screen and (max-width:1200px) {
+    #canvas {
+        width: 100%;
+    }
+}
+    
