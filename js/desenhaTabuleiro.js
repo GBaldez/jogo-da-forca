@@ -9,12 +9,15 @@ const botaoAddNovaPalavra = document.getElementById("adicionar-palavra");
 const divBotoes = document.querySelector(".botoes");
 let palavraSecreta;
 const container = document.querySelector("#forca");
+const simpleKeyboard = document.querySelector(".simple-keyboard");
 
 //função start
 const start = () => {
+    game.play();
     divBotoes.remove();
     canvas.style.display = "inline-block";
-    container.style.height = "auto";
+    container.style.height = "auto"; 
+    if(window.innerWidth < 768) simpleKeyboard.style.display = "inline-block";
     desenhaForca();
     palavraSecreta = escolhePalavra();
     desenhaTracos(palavraSecreta);
@@ -126,12 +129,14 @@ const verificaLetra = (letra, palavraSecreta) => {
             if(palavraSecreta[i] === letra) {
                 escreverLetraCerta(letra, 600/palavraSecreta.length, i);
                 palavraCorreta+=letra;
+                correct.play();
             }
         } 
         if(palavraCorreta.length === palavraSecreta.length) msgVitoria();
     } else {
         if(letras.includes(letra)) return;
         erros++;
+        wrong.play();
         letras.push(letra);
         escreverLetrasErradas(letra, palavraSecreta);
         desenhaForca();
@@ -239,7 +244,11 @@ const msgVitoria = () => {
     tabuleiro.fillStyle = "#8bc34a";
     tabuleiro.fillText("Você Venceu. Parabéns!", 500, 300);
     tabuleiro.stroke();
+    win.play();
 }
 
 botao.addEventListener("click", start);
 botaoAddNovaPalavra.addEventListener("click", adicionarNovaPalavra);
+
+//sound effects
+

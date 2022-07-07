@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
     <title>Jogo da Forca</title>
 </head>
 <body>
@@ -19,7 +19,8 @@
             <button id="btn-iniciar">Começar</button>
             <button id="adicionar-palavra">Adicionar Palavra</button>
         </div>
-        <canvas id="canvas" class="escondido" width="1200" height="860"></canvas>
+        <canvas id="canvas" width="1200" height="860"></canvas>
+        <div class="simple-keyboard"></div>
     </main>
 <!-- Fim da forca -->        
 <!-- Rodapé-->
@@ -29,6 +30,9 @@
 <!-- Fim do rodapé-->
 <!-- Scripts -->
     <script src="js/desenhaTabuleiro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+    <script src="js/virtualKeyboard.js"></script>
+    <script src="js/sounds.js"></script>
 <!-- Fim dos scripts -->
 </body>
 </html>

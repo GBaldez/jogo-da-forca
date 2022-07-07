@@ -38,6 +38,9 @@ h1 {
     cursor: pointer;
     margin-bottom: 20px;
 }
+#canvas {
+    display: none;
+}
 #forca {
     display: flex;
     flex-direction: column; 
@@ -68,4 +71,10 @@ footer>p {
     text-align: center;
     color: #00bcd4;
     background-color: #dcedc8;
+}
+
+.simple-keyboard{
+    color: black;
+    width: 100%;
+    display: none;
 }
